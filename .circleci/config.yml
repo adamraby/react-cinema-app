@@ -22,8 +22,8 @@ aliases:
   - &save-cache
     save_cache:
       paths:
-          - node_modules
-        key: app-{{ checksum "package.json" }}
+        - node_modules
+      key: app-{{ checksum "package.json" }}
   - &install-aws-cli
     run:
       name: Installing AWS CLI
