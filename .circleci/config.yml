@@ -44,7 +44,7 @@ aliases:
 
 jobs:
   build:
-    executor: app-executor
+    executor: app-executor 
     steps:
       - checkout
       - *show-current-branch-name
@@ -53,7 +53,7 @@ jobs:
       - *save-cache        
 
   deploy-to-aws-s3:
-    executor: app-executor
+    executor: app-executor 
     steps:
       - checkout
       - *show-current-branch-name
